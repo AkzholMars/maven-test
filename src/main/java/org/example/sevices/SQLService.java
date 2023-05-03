@@ -14,9 +14,9 @@ import java.util.List;
 
 public class SQLService {
     static final String QUERY = "SELECT u.login, u.fullname, u.age, u.gender, u.email, u.created_dt, " +
-            "ua.currency, ua.account_number\n" +
-            "FROM accounts ua\n" +
-            "JOIN users u\n" +
+            "ua.currency, ua.account_number" +
+            "FROM accounts ua" +
+            "JOIN users u" +
             "ON u.id = ua.id";
 
     public static List<User> getUser(){
